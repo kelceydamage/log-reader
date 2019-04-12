@@ -52,7 +52,7 @@ func handleRequest(conn net.Conn) {
   // Send the lines from the log and stay open for new lines.
   for line := range t.Lines {
     fmt.Println(line.Text)
-    conn.Write([]byte(line.Text))
+    conn.Write([]byte(line.Text + "\n"))
   }
 
   conn.Close()
