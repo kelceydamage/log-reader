@@ -7,6 +7,7 @@ import (
     "os"
 
     "github.com/hpcloud/tail"
+    //"github.com/pebbe/zmq4"
 )
 
 const (
